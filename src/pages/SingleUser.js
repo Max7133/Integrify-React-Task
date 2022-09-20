@@ -25,7 +25,7 @@ export const SingleUser = () => {
   }, [id]);
 
   return (
-    <div>
+    <div className="single-container">
       {singleUser ? (
         <div key={singleUser?.id}>
           <p>- name:{singleUser?.name}</p>

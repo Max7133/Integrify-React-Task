@@ -9,6 +9,16 @@
   padding: 10px;
 }
 
+.single-container {
+  background-color: rgba(246, 242, 242, 0.8);
+  border: 1px solid rgba(91, 88, 88, 0.8);
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  border-radius: 20px;
+}
+
 .grid-item {
   background-color: rgba(246, 242, 242, 0.8);
   border: 1px solid rgba(91, 88, 88, 0.8);
@@ -24,7 +34,7 @@
   color: black;
   font-size: 30px;
   border-radius: 50%;
-  border: 2px solid green;
+  border: 2px solid red;
   margin: auto;
   width: 100px;
   height: 100px;
