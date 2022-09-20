@@ -1,32 +1,26 @@
 import React, { useEffect, useState } from "react";
 import { api } from "../utils/api";
+import { UserCard } from "../components/UserCard";
 
 export const Home = () => {
   const [userList, setUserList] = useState(); // [get, set]
+
   const fetchUserInfo = async () => {
-    const res = await fetch(api);
-    if (res.status === 200) {
-      const data = await res.json();
-      setUserList(data);
+    try {
+      const res = await fetch(api);
+      if (res.status === 200) {
+        const data = await res.json();
+        setUserList(data);
+      }
+    } catch (err) {
+      console.error(err);
     }
-    console.log(userList);
   };
+
   useEffect(() => {
+    // whenever the page is loaded then it fetch the userlist
     fetchUserInfo();
   }, []);
-  return (
-    <div>
-      {userList.map((c) => (
-        <div>
-          <div>{c.name[0]}</div>
-          <div>{c.name}</div>
-          <div>{c.username}</div>
-          <div>{c.website}</div>
-          <div>
-            <button>MORE DETAILS</button>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
+
+  return <UserCard userList={userList} />;
 };

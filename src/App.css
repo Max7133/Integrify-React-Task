@@ -2,6 +2,45 @@
   text-align: center;
 }
 
+/* START UserCard CSS*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(246, 242, 242, 0.8);
+  border: 1px solid rgba(91, 88, 88, 0.8);
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.avatar {
+  background-color: gray;
+  color: black;
+  font-size: 30px;
+  border-radius: 50%;
+  border: 2px solid green;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  width: 30%;
+  height: 4%;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+/*END UserCard CSS*/
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
