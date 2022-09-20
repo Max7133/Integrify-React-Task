@@ -1,8 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Button } from "./Button";
 
 export const UserCard = (props) => {
-  const navigate = useNavigate();
   return (
     <div className="grid-container">
       {props.userList ? (
@@ -19,13 +18,7 @@ export const UserCard = (props) => {
               <a href={user.website}>http://{user.website}</a>
             </div>
             <div>
-              <button
-                onClick={() => {
-                  navigate(`./single-user/${user.id}`); // navigates to SingleUser page
-                }}
-              >
-                MORE DETAILS
-              </button>
+              <Button userId={user.id} />
             </div>
           </div>
         ))
