@@ -4,7 +4,7 @@ import { Button } from "./Button";
 export const UserCard = (props) => {
   return (
     <div className="grid-container">
-      {props.userList ? (
+      {props.userList &&
         props.userList.map((user) => (
           <div className="grid-item" key={user.id}>
             <div className="avatar">
@@ -15,16 +15,13 @@ export const UserCard = (props) => {
               <i>@{user.username}</i>
             </div>
             <div className="email-style">
-              <a href={user.website}>http://{user.website}</a>
+              <a href={`http://${user.website}`}>http://{user.website}</a>
             </div>
             <div>
               <Button userId={user.id} />
             </div>
           </div>
-        ))
-      ) : (
-        <div>{""}</div>
-      )}
+        ))}
     </div>
   );
 };

@@ -28,12 +28,12 @@ export const SingleUser = () => {
     <div className="single-container">
       {singleUser ? (
         <div key={singleUser?.id}>
-          <p>- name:{singleUser?.name}</p>
-          <p>- username:{singleUser?.username}</p>
-          <p>- email:{singleUser?.email}</p>
-          <p>- phone:{singleUser?.phone}</p>
-          <p>- company:{singleUser?.company?.name}</p>
-          <p>- website:{singleUser?.website}</p>
+          <p>- name: {singleUser?.name}</p>
+          <p>- username: {singleUser?.username}</p>
+          <p>- email: {singleUser?.email}</p>
+          <p>- phone: {singleUser?.phone}</p>
+          <p>- company: {singleUser?.company?.name}</p>
+          <p>- website: {singleUser?.website}</p>
           <p>
             - address:
             <li>street: {singleUser?.address?.street}</li>
@@ -43,7 +43,7 @@ export const SingleUser = () => {
           </p>
         </div>
       ) : (
-        <div>{""}</div>
+        <div>NO USER EXISTS</div>
       )}
     </div>
   );
