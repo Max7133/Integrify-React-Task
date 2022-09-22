@@ -9,8 +9,9 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding-left: 20%;
-  padding-right: 20%;
+  margin-left: 0.36%;
+  padding-inline-start: 20%;
+  padding-inline-end: 20%;
   position: absolute;
 }
 
