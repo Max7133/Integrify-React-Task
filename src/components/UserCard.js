@@ -14,7 +14,7 @@ export const UserCard = (props) => {
             <div>
               <i>@{user.username}</i>
             </div>
-            <div>
+            <div className="email-style">
               <a href={user.website}>http://{user.website}</a>
             </div>
             <div>
@@ -23,7 +23,7 @@ export const UserCard = (props) => {
           </div>
         ))
       ) : (
-        <div>EMPTY</div>
+        <div>{""}</div>
       )}
     </div>
   );

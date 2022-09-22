@@ -43,7 +43,7 @@ export const SingleUser = () => {
           </p>
         </div>
       ) : (
-        <div>EMPTY</div>
+        <div>{""}</div>
       )}
     </div>
   );
