@@ -36,12 +36,10 @@ export const SingleUser = () => {
           <p>- website:{singleUser?.website}</p>
           <p>
             - address:
-            <ul>
-              <li>street:{singleUser?.address?.street}</li>
-              <li>suite:{singleUser?.address?.suite}</li>
-              <li>city:{singleUser?.address?.city}</li>
-              <li>zipcode:{singleUser?.address?.zipcode}</li>
-            </ul>
+            <li>street: {singleUser?.address?.street}</li>
+            <li>suite: {singleUser?.address?.suite}</li>
+            <li>city: {singleUser?.address?.city}</li>
+            <li>zipcode: {singleUser?.address?.zipcode}</li>
           </p>
         </div>
       ) : (
