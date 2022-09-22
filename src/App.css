@@ -9,15 +9,16 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding-left: 20%;
-  padding-right: 20%;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .grid-item {
   background-color: rgba(246, 242, 242, 0.8);
   border: 1px solid rgb(255, 255, 255);
-  min-height: 350px;
   padding: 25px;
   font-weight: 500;
   font-size: 20px;
@@ -34,7 +35,6 @@ body {
   font-size: 20px;
   font-weight: 500;
   border-width: medium;
-  margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
